@@ -9,7 +9,6 @@
   "short_name": "Data Recce",
   "start_url": "/",
   "theme_color": "#090909",
-  "screenshots": [],
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
