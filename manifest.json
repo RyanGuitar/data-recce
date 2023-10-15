@@ -11,6 +11,11 @@
   "theme_color": "#090909",
   "icons": [
     {
+      "src":"maskable_icon.png",
+      "sizes":"246x245",
+      "purpose":"maskable"
+    },
+    {
       "src": "windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
     },
