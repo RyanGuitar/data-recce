@@ -1,3 +1,3 @@
 # data-recce
-<h1>A data visualizing tool for mobile.</h1>
+<p>A data visualizing tool for mobile.</p>
 <img src="screen.jpg" alt="screen shot" width="200" height="400">
