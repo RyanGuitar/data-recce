@@ -1,0 +1,348 @@
+:root {
+  --black-olive: rgba(58, 59, 51, 1);
+  --ebony: rgba(93, 101, 69, 1);
+  --drab-dark-brown: rgba(78, 76, 60, 1);
+  --ebony-2: rgba(76, 83, 55, 1);
+  --reseda-green: rgba(118, 113, 84, 1);
+  --graphBG: rgba(250, 250, 250, 0.4);
+  --shadowInset: 2px 2px 5px black inset;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  touch-action: none;
+  overscroll-behavior: none;
+  font-family: 'Courier New', monospace;
+  color: white;
+  background: rgb(10,10,10);
+  -webkit-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+main {
+  background-image: url('camo.jpg');
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#selectBox, #logoBox, #nameBox {
+  position: absolute;
+  z-index: 10;
+  transform: translate(0, -100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transition: transform 0.5s;
+  background-image: url('camo.jpg');
+  background-size: cover;
+}
+
+#selectBoxSpacer, #logoBoxSpacer, #nameBoxSpacer {
+  width: 100%;
+  height: 25%;
+  background: var(--mainBG);
+}
+
+#selectBoxInner, #logoBoxInner, #nameBoxInner {
+  width: 100%;
+  height: 75%;
+  background: var(--mainBG);
+}
+
+#nameBoxInner {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameBoxBtn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:60%;
+  height:20%;
+  background:var(--mainBG);
+  color: white;
+  font-size: 120%;
+  text-shadow: 2px 2px 1px black;
+  outline: none;
+}
+
+#nameBoxInput {
+  display: none;
+}
+
+#logoBoxInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#logoBoxArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:30%;
+  height:70%;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  background: var(--graphBG);
+  box-shadow: var(--shadowInset);
+}
+#logoBoxDate {
+  display:flex;
+  align-items: center;
+  justify-content: start;
+  width:70%;
+  height:70%;
+}
+
+#logoBoxBtnBox, #logoBoxView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:20%;
+  background: var(--mainBG);
+}
+#logoBoxView {
+  width:80%;
+}
+#logoBoxDownloadBtn {
+  width:60%;
+  height:70%;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 120%;
+  text-shadow: 2px 2px 1px black;
+  background:var(--mainBG);
+}
+
+#selectBoxPeriod {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+#selectBoxPeriod button {
+  outline: none;
+  border: none;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  font-size: 100%;
+  width: 50%;
+  height: 100%;
+  background: var(--mainBG);
+}
+
+#searchedDatesBox {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 68%;
+  margin-top: 2%;
+}
+
+#searchedDatesBox div {
+  text-align: center;
+  width: 70%;
+  padding: 5px 0;
+  height: auto;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  background: var(--graphBG);
+  box-shadow: var(--shadowInset);
+}
+
+#searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  background: var(--mainBG);
+}
+
+#searchBox input {
+  text-align: center;
+  height: 70%;
+  width: 70%;
+  font-size: 110%;
+  box-shadow: var(--shadowInset);
+  border: none;
+  outline: none;
+  color: black;
+}
+
+#top {
+  width: 100%;
+  height: 50%;
+}
+
+#header {
+  position: relative;
+  z-index: 10;
+  background-image: url('camo.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 25%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60%;
+  padding: 0 10px;
+}
+
+header span {
+  display: flex;
+  justify-content: center;
+}
+
+#name {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 180%;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  filter: drop-shadow(2px 2px 2px black);
+  height: 80%;
+  width: auto;
+}
+
+#date {
+  position: relative;
+  z-index: 10;
+  display: flex block;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  height: 40%;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+}
+
+#canvasOuter, #canvasOuter2 {
+  width: 100%;
+  height: 75%;
+  background: rgba(250, 250, 250, 0.3);
+}
+
+#canvasOuter {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+#canvasBox, #canvasBox2 {
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+  box-shadow: var(--shadowInset);
+}
+
+#canvasBox canvas, #canvasBox2 canvas {
+  height: 100%;
+  width: 100%;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+#inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+}
+
+#inputBox button {
+  height: 100%;
+  width: 20%;
+  font-size: 160%;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  border: none;
+  background: var(--mainBG);
+}
+
+#inputBox button:hover {
+  animation: showClick 0.5s;
+}
+
+@keyframes showClick {
+  50% {
+    background: var(--ebony)
+  }
+}
+
+#inputBox input {
+  text-align: center;
+  height: 70%;
+  width: 60%;
+  font-size: 110%;
+  box-shadow: var(--shadowInset);
+  border: none;
+  outline: none;
+  color: black;
+}
+
+#centerBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+#centerBox button {
+  outline: none;
+  border: none;
+  color: white;
+  text-shadow: 1px 1px 0px black;
+  font-size: 100%;
+  width: 50%;
+  height: 100%;
+  background: var(--mainBG);
+}
+
+#searchedDatesBox div:hover {
+  background: var(--ebony);
+}
+
+@media (orientation:landscape){
+  main {
+    left:50%;
+    transform:translate(-50%, 0);
+    border:2px solid black;
+    height:100%;
+    width:30%;
+  }
+}
+

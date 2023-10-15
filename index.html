@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data Recce 6</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="nameBox" data-open="closed">
+        <div id="nameBoxSpacer"></div>
+        <div id="nameBoxInner">
+          <label for="nameBoxInput" class="nameBoxBtn">Upload File</label>
+          <input type="file" id="nameBoxInput" accept=".txt" />
+        </div>
+      </div>
+
+      <div id="logoBox" data-open="closed">
+        <div id="logoBoxSpacer"></div>
+        <div id="logoBoxInner">
+          <div id="logoBoxView">
+            <div contenteditable="true" autocorrect="false" id="logoBoxArea">
+              PB
+            </div>
+            :
+            <div id="logoBoxDate"></div>
+          </div>
+          <div id="logoBoxBtnBox">
+            <button id="logoBoxDownloadBtn" type="button">Download</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="selectBox" data-open="closed">
+        <div id="selectBoxSpacer"></div>
+        <div id="selectBoxInner">
+          <div id="selectBoxPeriod">
+            <button id="dayPeriod" type="button" data-active="yes">Day</button>
+            <button id="monthPeriod" type="button" data-active="no">
+              Month
+            </button>
+          </div>
+          <div id="searchedDatesBox"></div>
+          <div id="searchBox">
+            <input placeholder="Search Dates" id="search" type="text" />
+          </div>
+        </div>
+      </div>
+
+      <div id="top">
+        <div id="header">
+          <header>
+            <span id="name">Data Recce</span
+            ><img src="logo.png" id="logo" alt="logo" />
+          </header>
+          <div id="date"></div>
+        </div>
+
+        <div id="canvasOuter">
+          <div id="canvasBox"></div>
+        </div>
+      </div>
+
+      <div id="bottom">
+        <div id="centerBox">
+          <button id="selectDate" type="button">Select Date</button>
+          <button id="analysis" type="button" data-analyse="stop">
+            Analysis
+          </button>
+        </div>
+        <div id="canvasOuter2">
+          <div id="canvasBox2"></div>
+        </div>
+        <div id="inputBox">
+          <button id="minus">-</button>
+          <input placeholder="Enter Data" id="input" type="text" />
+          <button id="plus">+</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="app.js"></script>
+    <script src="chart.min.js"></script>
+  </body>
+</html>
