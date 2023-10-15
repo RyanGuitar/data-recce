@@ -32,7 +32,7 @@ worker.addEventListener("message", (event) => {
     init()
   }
   if(msg == "error"){
-    console.log(data)
+    return
   }
 });
 
