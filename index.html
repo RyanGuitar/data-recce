@@ -104,6 +104,12 @@ I am actively looking for employment. Feel free to contact me with any offers. -
       </div>
     </main>
 
+    <script>
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('pwabuilder-sw.js')
+      }
+    </script>
+
     <script type="module" src="app.js"></script>
     <script src="chart.min.js"></script>
   </body>
