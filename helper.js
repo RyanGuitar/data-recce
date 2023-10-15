@@ -1,5 +1,6 @@
 import {
-  getValue
+  getValue,
+  getData,
 } from "./scripts/RWD.js"
 
 const months = [
