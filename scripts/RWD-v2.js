@@ -4,7 +4,7 @@ import {
   getId,
   getTotalDateAlarms,
   sortDataObject,
-  getTodaysDate
+  getTodaysDate,
 } from "../helper.js"
 import {
   generateBarChart,
