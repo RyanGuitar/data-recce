@@ -293,7 +293,7 @@ header span {
   background: var(--mainBG);
 }
 
-#inputBox button:hover {
+/* #inputBox button:hover {
   animation: showClick 0.5s;
 }
 
@@ -301,7 +301,7 @@ header span {
   50% {
     background: var(--ebony)
   }
-}
+} */
 
 #inputBox input {
   text-align: center;
@@ -331,6 +331,9 @@ header span {
   height: 100%;
   background: var(--mainBG);
 }
+button:hover {
+  cursor:pointer;
+}
 
 #searchedDatesBox div:hover {
   background: var(--ebony);
@@ -346,3 +349,25 @@ header span {
   }
 }
 
+#name:hover, #logo:hover, .nameBoxBtn:hover {
+  cursor:pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height:10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mainBG);
+}
+
+::-webkit-scrollbar-thumb {
+  width:50px;
+  background: var(--mainBG);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ebony);
+  cursor:pointer;
+}
