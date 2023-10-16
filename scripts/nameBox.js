@@ -1,5 +1,5 @@
 import { addChange, closeSelectBox, closeLogoBox, getNameBoxStatus, openNameBox, closeNameBox, stopAnalysis } from "../helper.js";
-import { worker } from "./RWD.js";
+import { worker } from "./RWD-v2.js";
 
 function nameBoxControl() {
   const open = getNameBoxStatus();

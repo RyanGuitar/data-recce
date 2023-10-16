@@ -23,8 +23,9 @@ worker.addEventListener("message", (event) => {
   }
   if (msg === "read" && data) {
     setData(data);
-    const {year, month, day} = getTodaysDate()
-    if(!data[year][month][day]){
+   const {year, month, day} = getTodaysDate()
+   
+    if(!data[year]?.[month]?.[day]){
       addToId("canvasBox", "");
       getId("canvasBox").style.width = `${0}px`
       addToId("canvasBox2", "");

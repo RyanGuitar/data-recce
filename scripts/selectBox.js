@@ -12,7 +12,7 @@ import {
   closeNameBox,
   closeLogoBox 
 } from "../helper.js";
-import { getData } from "./RWD.js";
+import { getData } from "./RWD-v2.js";
 import { generatePieChart, generateBarChart } from "./drawCharts.js";
 import { stopAnalysis } from "./analysis.js";
 

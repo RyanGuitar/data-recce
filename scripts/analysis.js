@@ -15,7 +15,7 @@ import {
 import {
   getData,
   worker
-} from "./RWD.js"
+} from "./RWD-v2.js"
 import {
   generateBarChart,
   generatePercentagePieChart,

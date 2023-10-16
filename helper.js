@@ -1,7 +1,7 @@
 import {
   getValue,
   getData,
-} from "./scripts/RWD.js"
+} from "./scripts/RWD-v2.js"
 
 const months = [
   "January",
