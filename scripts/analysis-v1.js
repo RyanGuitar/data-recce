@@ -23,7 +23,7 @@ import {
 } from "./drawCharts.js"
 import {
   processSearchedMonth,
-} from "./selectBox.js"
+} from "./selectBox-v1.js"
 
 function analyseData(){
   let dataObj = {}

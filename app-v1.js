@@ -4,10 +4,10 @@ import {
 } from "./helper.js";
 import {
   selectBoxControl
-} from "../scripts/selectBox.js"
+} from "../scripts/selectBox-v1.js"
 import {
   analyseData,
-} from "./scripts/analysis.js"
+} from "./scripts/analysis-v1.js"
 import {
   nameBoxControl
 } from "./scripts/nameBox.js"
